@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CuidadoresComponent } from './cuidadores/cuidadores.component';
 import { MarketComponent } from './market/market.component';
 import { KeepersComponent } from './keepers/keepers.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -20,6 +22,8 @@ const AppRutas:Routes = [
     {path:'cuidadores', component: CuidadoresComponent },
     {path:'market', component: MarketComponent },
     {path:'keepers', component: KeepersComponent },
+    {path:'login', component: LoginComponent },
+    {path:'register', component: RegisterComponent },
     {path:'**', component: AppComponent }
 ];
 

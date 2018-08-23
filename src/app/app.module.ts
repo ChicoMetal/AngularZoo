@@ -14,6 +14,8 @@ import { CuidadoresComponent } from './cuidadores/cuidadores.component';
 
 import { EmailUserModule } from "./email-user/email-user.module";
 import { AdminModule } from "./admin/admin.module";
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { AdminModule } from "./admin/admin.module";
     ContactComponent,
     AnimalsComponent,
     MarketComponent,
-    CuidadoresComponent
+    CuidadoresComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
+    ReactiveFormsModule,
     EmailUserModule,
     AdminModule
   ],
