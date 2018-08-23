@@ -1,0 +1,57 @@
+<div class="navigation col-lg-12">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="nav navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" [routerLink] = "['/home']" >NGZOO</a>
+            </div>
+            <ul class="nav navbar-nav">   
+                <li><a [routerLink] = "['/home']" 
+                    [routerLinkActive]="['active']">
+                    <span class="glyphicon glyphicon-home"></span>
+                    Inicio</a></li>             
+                <li><a [routerLink] = "['/animals']" 
+                    [routerLinkActive]="['active']"> 
+                    <span class="glyphicon glyphicon-star"></span>
+                    Animales </a>
+                </li>
+                <li>                    
+                    <a [routerLink] = "['/cuidadores']" 
+                    [routerLinkActive]="['active']"> 
+                        <span class="glyphicon glyphicon-user"></span>
+                        Cuidadores </a>
+                </li>
+                <li><a [routerLink] = "['/market']" 
+                    [routerLinkActive]="['active']"> 
+                    <span class="glyphicon glyphicon-gift"></span>
+                    Tienda </a>
+                </li>
+                <li><a [routerLink] = "['/contact']" 
+                    [routerLinkActive]="['active']"> 
+                    <span class="glyphicon glyphicon-comment"></span>
+                    Contacto </a></li>                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]="['/']">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Registro</a></li>
+                <li><a [routerLink] = "['/contact']"> 
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    Ingresar </a></li>    
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<nav id="menu">
+
+    
+</nav>
+
+<router-outlet></router-outlet>
